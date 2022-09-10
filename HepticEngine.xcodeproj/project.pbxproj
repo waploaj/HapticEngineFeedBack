@@ -444,6 +444,10 @@
 				DEVELOPMENT_TEAM = NW29K4SP2U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HepticEngine/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = herere;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please Allow usage for better experience";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -473,6 +477,10 @@
 				DEVELOPMENT_TEAM = NW29K4SP2U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HepticEngine/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = herere;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please Allow usage for better experience";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
