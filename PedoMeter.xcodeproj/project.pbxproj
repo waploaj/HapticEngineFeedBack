@@ -17,6 +17,7 @@
 		047C0D0028CF1136006770D4 /* PedoMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CFF28CF1136006770D4 /* PedoMeterTests.swift */; };
 		047C0D0A28CF1137006770D4 /* PedoMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D0928CF1137006770D4 /* PedoMeterUITests.swift */; };
 		047C0D0C28CF1137006770D4 /* PedoMeterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D0B28CF1137006770D4 /* PedoMeterUITestsLaunchTests.swift */; };
+		047C0D1928CF1AA2006770D4 /* UserDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D1828CF1AA2006770D4 /* UserDesign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		047C0D0528CF1137006770D4 /* PedoMeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedoMeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047C0D0928CF1137006770D4 /* PedoMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedoMeterUITests.swift; sourceTree = "<group>"; };
 		047C0D0B28CF1137006770D4 /* PedoMeterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedoMeterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		047C0D1828CF1AA2006770D4 /* UserDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDesign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				047C0CE528CF1132006770D4 /* AppDelegate.swift */,
 				047C0CE728CF1132006770D4 /* SceneDelegate.swift */,
 				047C0CE928CF1132006770D4 /* ViewController.swift */,
+				047C0D1828CF1AA2006770D4 /* UserDesign.swift */,
 				047C0CEB28CF1133006770D4 /* Main.storyboard */,
 				047C0CF128CF1136006770D4 /* Assets.xcassets */,
 				047C0CF328CF1136006770D4 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			files = (
 				047C0CEA28CF1132006770D4 /* ViewController.swift in Sources */,
 				047C0CE628CF1132006770D4 /* AppDelegate.swift in Sources */,
+				047C0D1928CF1AA2006770D4 /* UserDesign.swift in Sources */,
 				047C0CE828CF1132006770D4 /* SceneDelegate.swift in Sources */,
 				047C0CF028CF1133006770D4 /* PedoMeter.xcdatamodeld in Sources */,
 			);
@@ -441,14 +445,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NW29K4SP2U;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PedoMeter/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "Inorder to count step we need access to your pedoMeter";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,14 +475,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = NW29K4SP2U;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PedoMeter/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "Inorder to count step we need access to your pedoMeter";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
