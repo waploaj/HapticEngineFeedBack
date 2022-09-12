@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047C0CE628CF1132006770D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CE528CF1132006770D4 /* AppDelegate.swift */; };
+		047C0CE828CF1132006770D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CE728CF1132006770D4 /* SceneDelegate.swift */; };
+		047C0CEA28CF1132006770D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CE928CF1132006770D4 /* ViewController.swift */; };
+		047C0CED28CF1133006770D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C0CEB28CF1133006770D4 /* Main.storyboard */; };
+		047C0CF028CF1133006770D4 /* PedoMeter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CEE28CF1133006770D4 /* PedoMeter.xcdatamodeld */; };
+		047C0CF228CF1136006770D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047C0CF128CF1136006770D4 /* Assets.xcassets */; };
+		047C0CF528CF1136006770D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047C0CF328CF1136006770D4 /* LaunchScreen.storyboard */; };
+		047C0D0028CF1136006770D4 /* PedoMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CFF28CF1136006770D4 /* PedoMeterTests.swift */; };
+		047C0D0A28CF1137006770D4 /* PedoMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D0928CF1137006770D4 /* PedoMeterUITests.swift */; };
+		047C0D0C28CF1137006770D4 /* PedoMeterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D0B28CF1137006770D4 /* PedoMeterUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		047C0CFC28CF1136006770D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 047C0CDA28CF1132006770D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047C0CE128CF1132006770D4;
+			remoteInfo = PedoMeter;
+		};
+		047C0D0628CF1137006770D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 047C0CDA28CF1132006770D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 047C0CE128CF1132006770D4;
+			remoteInfo = PedoMeter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		047C0CE228CF1132006770D4 /* PedoMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PedoMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047C0CE528CF1132006770D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		047C0CE728CF1132006770D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		047C0CE928CF1132006770D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		047C0CEC28CF1133006770D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		047C0CEF28CF1133006770D4 /* PedoMeter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PedoMeter.xcdatamodel; sourceTree = "<group>"; };
+		047C0CF128CF1136006770D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		047C0CF428CF1136006770D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		047C0CF628CF1136006770D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047C0CFB28CF1136006770D4 /* PedoMeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedoMeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		047C0CFF28CF1136006770D4 /* PedoMeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedoMeterTests.swift; sourceTree = "<group>"; };
+		047C0D0528CF1137006770D4 /* PedoMeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PedoMeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		047C0D0928CF1137006770D4 /* PedoMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedoMeterUITests.swift; sourceTree = "<group>"; };
+		047C0D0B28CF1137006770D4 /* PedoMeterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedoMeterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047C0CDF28CF1132006770D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047C0CF828CF1136006770D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047C0D0228CF1137006770D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047C0CD928CF1132006770D4 = {
+			isa = PBXGroup;
+			children = (
+				047C0CE428CF1132006770D4 /* PedoMeter */,
+				047C0CFE28CF1136006770D4 /* PedoMeterTests */,
+				047C0D0828CF1137006770D4 /* PedoMeterUITests */,
+				047C0CE328CF1132006770D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		047C0CE328CF1132006770D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047C0CE228CF1132006770D4 /* PedoMeter.app */,
+				047C0CFB28CF1136006770D4 /* PedoMeterTests.xctest */,
+				047C0D0528CF1137006770D4 /* PedoMeterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		047C0CE428CF1132006770D4 /* PedoMeter */ = {
+			isa = PBXGroup;
+			children = (
+				047C0CE528CF1132006770D4 /* AppDelegate.swift */,
+				047C0CE728CF1132006770D4 /* SceneDelegate.swift */,
+				047C0CE928CF1132006770D4 /* ViewController.swift */,
+				047C0CEB28CF1133006770D4 /* Main.storyboard */,
+				047C0CF128CF1136006770D4 /* Assets.xcassets */,
+				047C0CF328CF1136006770D4 /* LaunchScreen.storyboard */,
+				047C0CF628CF1136006770D4 /* Info.plist */,
+				047C0CEE28CF1133006770D4 /* PedoMeter.xcdatamodeld */,
+			);
+			path = PedoMeter;
+			sourceTree = "<group>";
+		};
+		047C0CFE28CF1136006770D4 /* PedoMeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				047C0CFF28CF1136006770D4 /* PedoMeterTests.swift */,
+			);
+			path = PedoMeterTests;
+			sourceTree = "<group>";
+		};
+		047C0D0828CF1137006770D4 /* PedoMeterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				047C0D0928CF1137006770D4 /* PedoMeterUITests.swift */,
+				047C0D0B28CF1137006770D4 /* PedoMeterUITestsLaunchTests.swift */,
+			);
+			path = PedoMeterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		047C0CE128CF1132006770D4 /* PedoMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047C0D0F28CF1137006770D4 /* Build configuration list for PBXNativeTarget "PedoMeter" */;
+			buildPhases = (
+				047C0CDE28CF1132006770D4 /* Sources */,
+				047C0CDF28CF1132006770D4 /* Frameworks */,
+				047C0CE028CF1132006770D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PedoMeter;
+			productName = PedoMeter;
+			productReference = 047C0CE228CF1132006770D4 /* PedoMeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		047C0CFA28CF1136006770D4 /* PedoMeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047C0D1228CF1137006770D4 /* Build configuration list for PBXNativeTarget "PedoMeterTests" */;
+			buildPhases = (
+				047C0CF728CF1136006770D4 /* Sources */,
+				047C0CF828CF1136006770D4 /* Frameworks */,
+				047C0CF928CF1136006770D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047C0CFD28CF1136006770D4 /* PBXTargetDependency */,
+			);
+			name = PedoMeterTests;
+			productName = PedoMeterTests;
+			productReference = 047C0CFB28CF1136006770D4 /* PedoMeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		047C0D0428CF1137006770D4 /* PedoMeterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047C0D1528CF1137006770D4 /* Build configuration list for PBXNativeTarget "PedoMeterUITests" */;
+			buildPhases = (
+				047C0D0128CF1137006770D4 /* Sources */,
+				047C0D0228CF1137006770D4 /* Frameworks */,
+				047C0D0328CF1137006770D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047C0D0728CF1137006770D4 /* PBXTargetDependency */,
+			);
+			name = PedoMeterUITests;
+			productName = PedoMeterUITests;
+			productReference = 047C0D0528CF1137006770D4 /* PedoMeterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		047C0CDA28CF1132006770D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					047C0CE128CF1132006770D4 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					047C0CFA28CF1136006770D4 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 047C0CE128CF1132006770D4;
+					};
+					047C0D0428CF1137006770D4 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 047C0CE128CF1132006770D4;
+					};
+				};
+			};
+			buildConfigurationList = 047C0CDD28CF1132006770D4 /* Build configuration list for PBXProject "PedoMeter" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 047C0CD928CF1132006770D4;
+			productRefGroup = 047C0CE328CF1132006770D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				047C0CE128CF1132006770D4 /* PedoMeter */,
+				047C0CFA28CF1136006770D4 /* PedoMeterTests */,
+				047C0D0428CF1137006770D4 /* PedoMeterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047C0CE028CF1132006770D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047C0CF528CF1136006770D4 /* LaunchScreen.storyboard in Resources */,
+				047C0CF228CF1136006770D4 /* Assets.xcassets in Resources */,
+				047C0CED28CF1133006770D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047C0CF928CF1136006770D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047C0D0328CF1137006770D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		047C0CDE28CF1132006770D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047C0CEA28CF1132006770D4 /* ViewController.swift in Sources */,
+				047C0CE628CF1132006770D4 /* AppDelegate.swift in Sources */,
+				047C0CE828CF1132006770D4 /* SceneDelegate.swift in Sources */,
+				047C0CF028CF1133006770D4 /* PedoMeter.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047C0CF728CF1136006770D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047C0D0028CF1136006770D4 /* PedoMeterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		047C0D0128CF1137006770D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047C0D0C28CF1137006770D4 /* PedoMeterUITestsLaunchTests.swift in Sources */,
+				047C0D0A28CF1137006770D4 /* PedoMeterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		047C0CFD28CF1136006770D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047C0CE128CF1132006770D4 /* PedoMeter */;
+			targetProxy = 047C0CFC28CF1136006770D4 /* PBXContainerItemProxy */;
+		};
+		047C0D0728CF1137006770D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 047C0CE128CF1132006770D4 /* PedoMeter */;
+			targetProxy = 047C0D0628CF1137006770D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		047C0CEB28CF1133006770D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047C0CEC28CF1133006770D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		047C0CF328CF1136006770D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047C0CF428CF1136006770D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		047C0D0D28CF1137006770D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		047C0D0E28CF1137006770D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		047C0D1028CF1137006770D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NW29K4SP2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PedoMeter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = waploaj.PedoMeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		047C0D1128CF1137006770D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NW29K4SP2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PedoMeter/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = waploaj.PedoMeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		047C0D1328CF1137006770D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NW29K4SP2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = waploaj.PedoMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PedoMeter.app/PedoMeter";
+			};
+			name = Debug;
+		};
+		047C0D1428CF1137006770D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NW29K4SP2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = waploaj.PedoMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PedoMeter.app/PedoMeter";
+			};
+			name = Release;
+		};
+		047C0D1628CF1137006770D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NW29K4SP2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = waploaj.PedoMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PedoMeter;
+			};
+			name = Debug;
+		};
+		047C0D1728CF1137006770D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NW29K4SP2U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = waploaj.PedoMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PedoMeter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		047C0CDD28CF1132006770D4 /* Build configuration list for PBXProject "PedoMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047C0D0D28CF1137006770D4 /* Debug */,
+				047C0D0E28CF1137006770D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047C0D0F28CF1137006770D4 /* Build configuration list for PBXNativeTarget "PedoMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047C0D1028CF1137006770D4 /* Debug */,
+				047C0D1128CF1137006770D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047C0D1228CF1137006770D4 /* Build configuration list for PBXNativeTarget "PedoMeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047C0D1328CF1137006770D4 /* Debug */,
+				047C0D1428CF1137006770D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047C0D1528CF1137006770D4 /* Build configuration list for PBXNativeTarget "PedoMeterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047C0D1628CF1137006770D4 /* Debug */,
+				047C0D1728CF1137006770D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		047C0CEE28CF1133006770D4 /* PedoMeter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				047C0CEF28CF1133006770D4 /* PedoMeter.xcdatamodel */,
+			);
+			currentVersion = 047C0CEF28CF1133006770D4 /* PedoMeter.xcdatamodel */;
+			path = PedoMeter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 047C0CDA28CF1132006770D4 /* Project object */;
+}
