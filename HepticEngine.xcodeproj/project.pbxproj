@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		008988E21DAB22E4F6FD3D04 /* Pods_HepticEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84B78E107430C6DAB4D80A2 /* Pods_HepticEngine.framework */; };
 		046A381428CC6F9600D6E787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A381328CC6F9600D6E787 /* AppDelegate.swift */; };
 		046A381628CC6F9600D6E787 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A381528CC6F9600D6E787 /* SceneDelegate.swift */; };
 		046A381828CC6F9600D6E787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A381728CC6F9600D6E787 /* ViewController.swift */; };
@@ -17,6 +18,11 @@
 		046A382E28CC6F9B00D6E787 /* HepticEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A382D28CC6F9B00D6E787 /* HepticEngineTests.swift */; };
 		046A383828CC6F9B00D6E787 /* HepticEngineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A383728CC6F9B00D6E787 /* HepticEngineUITests.swift */; };
 		046A383A28CC6F9B00D6E787 /* HepticEngineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A383928CC6F9B00D6E787 /* HepticEngineUITestsLaunchTests.swift */; };
+		047C0CD628CCC513006770D4 /* StepCounting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CD528CCC513006770D4 /* StepCounting.swift */; };
+		047C0CD828CCC6E5006770D4 /* ButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0CD728CCC6E5006770D4 /* ButtonDesign.swift */; };
+		047C0D1B28CF4998006770D4 /* PedoMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C0D1A28CF4998006770D4 /* PedoMeter.swift */; };
+		4DC0C692754DD32345AB8AB0 /* Pods_HepticEngine_HepticEngineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315880A3FE626D29D2A80FA4 /* Pods_HepticEngine_HepticEngineUITests.framework */; };
+		FAB798DFD165F1BFD49D6ED4 /* Pods_HepticEngineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26559B6FECBAD2AE54E23A7A /* Pods_HepticEngineTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		046A383328CC6F9B00D6E787 /* HepticEngineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HepticEngineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046A383728CC6F9B00D6E787 /* HepticEngineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HepticEngineUITests.swift; sourceTree = "<group>"; };
 		046A383928CC6F9B00D6E787 /* HepticEngineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HepticEngineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		047C0CD528CCC513006770D4 /* StepCounting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounting.swift; sourceTree = "<group>"; };
+		047C0CD728CCC6E5006770D4 /* ButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDesign.swift; sourceTree = "<group>"; };
+		047C0D1A28CF4998006770D4 /* PedoMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedoMeter.swift; sourceTree = "<group>"; };
+		26559B6FECBAD2AE54E23A7A /* Pods_HepticEngineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HepticEngineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3004C0A853C9A420FAAE03F2 /* Pods-HepticEngine-HepticEngineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HepticEngine-HepticEngineUITests.release.xcconfig"; path = "Target Support Files/Pods-HepticEngine-HepticEngineUITests/Pods-HepticEngine-HepticEngineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		314D77E31E505EAC06AD99F4 /* Pods-HepticEngineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HepticEngineTests.release.xcconfig"; path = "Target Support Files/Pods-HepticEngineTests/Pods-HepticEngineTests.release.xcconfig"; sourceTree = "<group>"; };
+		315880A3FE626D29D2A80FA4 /* Pods_HepticEngine_HepticEngineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HepticEngine_HepticEngineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC33A8FF9376CF97885A456 /* Pods-HepticEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HepticEngine.debug.xcconfig"; path = "Target Support Files/Pods-HepticEngine/Pods-HepticEngine.debug.xcconfig"; sourceTree = "<group>"; };
+		A84B78E107430C6DAB4D80A2 /* Pods_HepticEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HepticEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8045AE2E74E6DEE54A9C437 /* Pods-HepticEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HepticEngine.release.xcconfig"; path = "Target Support Files/Pods-HepticEngine/Pods-HepticEngine.release.xcconfig"; sourceTree = "<group>"; };
+		E8D022FE6B0093E2D4B5A49A /* Pods-HepticEngine-HepticEngineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HepticEngine-HepticEngineUITests.debug.xcconfig"; path = "Target Support Files/Pods-HepticEngine-HepticEngineUITests/Pods-HepticEngine-HepticEngineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECCC598AA17D36991D268796 /* Pods-HepticEngineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HepticEngineTests.debug.xcconfig"; path = "Target Support Files/Pods-HepticEngineTests/Pods-HepticEngineTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008988E21DAB22E4F6FD3D04 /* Pods_HepticEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB798DFD165F1BFD49D6ED4 /* Pods_HepticEngineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC0C692754DD32345AB8AB0 /* Pods_HepticEngine_HepticEngineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +106,8 @@
 				046A382C28CC6F9B00D6E787 /* HepticEngineTests */,
 				046A383628CC6F9B00D6E787 /* HepticEngineUITests */,
 				046A381128CC6F9600D6E787 /* Products */,
+				BB0DAD1C24A073B18871A657 /* Pods */,
+				7CCCDC7150A77FE30179FE2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +127,9 @@
 				046A381328CC6F9600D6E787 /* AppDelegate.swift */,
 				046A381528CC6F9600D6E787 /* SceneDelegate.swift */,
 				046A381728CC6F9600D6E787 /* ViewController.swift */,
+				047C0D1A28CF4998006770D4 /* PedoMeter.swift */,
+				047C0CD528CCC513006770D4 /* StepCounting.swift */,
+				047C0CD728CCC6E5006770D4 /* ButtonDesign.swift */,
 				046A381928CC6F9600D6E787 /* Main.storyboard */,
 				046A381F28CC6F9B00D6E787 /* Assets.xcassets */,
 				046A382128CC6F9B00D6E787 /* LaunchScreen.storyboard */,
@@ -130,6 +156,30 @@
 			path = HepticEngineUITests;
 			sourceTree = "<group>";
 		};
+		7CCCDC7150A77FE30179FE2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A84B78E107430C6DAB4D80A2 /* Pods_HepticEngine.framework */,
+				315880A3FE626D29D2A80FA4 /* Pods_HepticEngine_HepticEngineUITests.framework */,
+				26559B6FECBAD2AE54E23A7A /* Pods_HepticEngineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB0DAD1C24A073B18871A657 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FC33A8FF9376CF97885A456 /* Pods-HepticEngine.debug.xcconfig */,
+				E8045AE2E74E6DEE54A9C437 /* Pods-HepticEngine.release.xcconfig */,
+				E8D022FE6B0093E2D4B5A49A /* Pods-HepticEngine-HepticEngineUITests.debug.xcconfig */,
+				3004C0A853C9A420FAAE03F2 /* Pods-HepticEngine-HepticEngineUITests.release.xcconfig */,
+				ECCC598AA17D36991D268796 /* Pods-HepticEngineTests.debug.xcconfig */,
+				314D77E31E505EAC06AD99F4 /* Pods-HepticEngineTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046A383D28CC6F9B00D6E787 /* Build configuration list for PBXNativeTarget "HepticEngine" */;
 			buildPhases = (
+				68CB8CD8CE38802D9AE0A219 /* [CP] Check Pods Manifest.lock */,
 				046A380C28CC6F9600D6E787 /* Sources */,
 				046A380D28CC6F9600D6E787 /* Frameworks */,
 				046A380E28CC6F9600D6E787 /* Resources */,
+				A2C5F211E240A5140F41A8FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046A384028CC6F9B00D6E787 /* Build configuration list for PBXNativeTarget "HepticEngineTests" */;
 			buildPhases = (
+				96969F28BD17B2CDC402AE3D /* [CP] Check Pods Manifest.lock */,
 				046A382528CC6F9B00D6E787 /* Sources */,
 				046A382628CC6F9B00D6E787 /* Frameworks */,
 				046A382728CC6F9B00D6E787 /* Resources */,
@@ -172,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046A384328CC6F9B00D6E787 /* Build configuration list for PBXNativeTarget "HepticEngineUITests" */;
 			buildPhases = (
+				C2CD8DD8D9F02185EAFEADA9 /* [CP] Check Pods Manifest.lock */,
 				046A382F28CC6F9B00D6E787 /* Sources */,
 				046A383028CC6F9B00D6E787 /* Frameworks */,
 				046A383128CC6F9B00D6E787 /* Resources */,
+				EB59347B7891DA2B94C4874F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,14 +311,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68CB8CD8CE38802D9AE0A219 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HepticEngine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96969F28BD17B2CDC402AE3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HepticEngineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C5F211E240A5140F41A8FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HepticEngine/Pods-HepticEngine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HepticEngine/Pods-HepticEngine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HepticEngine/Pods-HepticEngine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2CD8DD8D9F02185EAFEADA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HepticEngine-HepticEngineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB59347B7891DA2B94C4874F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HepticEngine-HepticEngineUITests/Pods-HepticEngine-HepticEngineUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HepticEngine-HepticEngineUITests/Pods-HepticEngine-HepticEngineUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HepticEngine-HepticEngineUITests/Pods-HepticEngine-HepticEngineUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		046A380C28CC6F9600D6E787 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047C0D1B28CF4998006770D4 /* PedoMeter.swift in Sources */,
 				046A381E28CC6F9600D6E787 /* HepticEngine.xcdatamodeld in Sources */,
 				046A381828CC6F9600D6E787 /* ViewController.swift in Sources */,
 				046A381428CC6F9600D6E787 /* AppDelegate.swift in Sources */,
+				047C0CD828CCC6E5006770D4 /* ButtonDesign.swift in Sources */,
+				047C0CD628CCC513006770D4 /* StepCounting.swift in Sources */,
 				046A381628CC6F9600D6E787 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +597,7 @@
 		};
 		046A383E28CC6F9B00D6E787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC33A8FF9376CF97885A456 /* Pods-HepticEngine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +610,7 @@
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = herere;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please Allow usage for better experience";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location";
+				INFOPLIST_KEY_NSMotionUsageDescription = "We are using Motion Usage to track ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -469,6 +632,7 @@
 		};
 		046A383F28CC6F9B00D6E787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8045AE2E74E6DEE54A9C437 /* Pods-HepticEngine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -481,6 +645,7 @@
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = herere;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Please Allow usage for better experience";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location";
+				INFOPLIST_KEY_NSMotionUsageDescription = "We are using Motion Usage to track ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -502,6 +667,7 @@
 		};
 		046A384128CC6F9B00D6E787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECCC598AA17D36991D268796 /* Pods-HepticEngineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -521,6 +687,7 @@
 		};
 		046A384228CC6F9B00D6E787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 314D77E31E505EAC06AD99F4 /* Pods-HepticEngineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +707,7 @@
 		};
 		046A384428CC6F9B00D6E787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D022FE6B0093E2D4B5A49A /* Pods-HepticEngine-HepticEngineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +725,7 @@
 		};
 		046A384528CC6F9B00D6E787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3004C0A853C9A420FAAE03F2 /* Pods-HepticEngine-HepticEngineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

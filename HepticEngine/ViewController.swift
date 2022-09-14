@@ -7,17 +7,45 @@
 
 import UIKit
 import CoreLocation
+import CoreMotion
+import Alamofire
+
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
+    
     let locationManger = CLLocationManager()
+    let p = ButtonDesign()
+    private let activityManger = CMMotionActivityManager()
+    private let pedoMeter =  CMPedometer()
+    
+    
+    @IBOutlet weak var Uilabel: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        Uilabel.adjustsFontSizeToFitWidth = true
+        //Uilabel.minimumScaleFactor = 0.01
+        
+        let parameter = ["appVersion": "1.3.1",
+                         "countryCode": "TZ",
+                         "deviceName": "chrome",
+                         "deviceId": "Web",
+                         "deviceOS": "Mac OS",
+                         "deviceToken": "token",
+                         "mobileNumber": "+255710886014",
+                         "password": "youwishmotherfucker"]
+        AF.request("https://azamtvmax.com/api/login",method: .post,parameters: parameter).response{
+            response in
+            debugPrint(response)
+        }
+        
         
         //Impact haptic engine feedback
-        buttonUiDesign()
+        self.view.addSubview(p.buttonUiDesign())
         
         //Request User Permission when app is open / background
         locationManger.requestAlwaysAuthorization()
@@ -38,7 +66,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     //Print location coordinate to the console
     func locationManager(_ _manager:CLLocationManager, didUpdateLocations Location:[CLLocation]){
         if let location = Location.first{
-            print(location.coordinate)
+            //print(location.coordinate)
+            Uilabel.text = location.description
+            //print(location.description)
+            
         }
         
     }
@@ -67,41 +98,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         self.present(alertControler, animated: true, completion: nil)
     }
     
-    
-    
-    //Notification Using Haptic Engine when clicked.
-    @objc func buttonClicked(sender:UIButton){
-//        let alert = UIAlertController(title: "clicked", message: "you have clicked the button", preferredStyle: .alert)
-//        self.present(alert, animated: true, completion:nil)
-        
-        let impact = UIImpactFeedbackGenerator()
-        impact.impactOccurred()
-        
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func buttonUiDesign(){
-        let buttonX = 150
-        let buttonY = 150
-        let buttonHeight = 50
-        let buttonWidth = 100
-        
-        let button = UIButton(type: .system)
-        button.setTitle("Click me!!", for: .normal)
-        button.tintColor = .blue
-        button.backgroundColor = .red
-        button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
-        
-        
-        button.frame = CGRect(x: buttonX, y: buttonY, width: buttonWidth, height: buttonHeight)
-        
-        self.view.addSubview(button)
-        
-    }
-
 
 }
 
