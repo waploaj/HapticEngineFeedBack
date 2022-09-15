@@ -20,15 +20,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     private let pedoMeter =  CMPedometer()
     
     
-    @IBOutlet weak var Uilabel: UILabel!
+    
+    @IBOutlet weak var coordinate: UILabel!
+    
+    @IBOutlet weak var altitude: UILabel!
+    @IBOutlet weak var speed: UILabel!
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        Uilabel.adjustsFontSizeToFitWidth = true
-        //Uilabel.minimumScaleFactor = 0.01
+        coordinate.adjustsFontSizeToFitWidth = true
+        
+        
         
         let parameter = ["appVersion": "1.3.1",
                          "countryCode": "TZ",
@@ -37,10 +42,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                          "deviceOS": "Mac OS",
                          "deviceToken": "token",
                          "mobileNumber": "+255710886014",
-                         "password": "youwishmotherfucker"]
+                         "password": "123456"]
         AF.request("https://azamtvmax.com/api/login",method: .post,parameters: parameter).response{
             response in
-            debugPrint(response)
+            //debugPrint(response)
         }
         
         
@@ -66,13 +71,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     //Print location coordinate to the console
     func locationManager(_ _manager:CLLocationManager, didUpdateLocations Location:[CLLocation]){
         if let location = Location.first{
-            //print(location.coordinate)
-            Uilabel.text = location.description
-            //print(location.description)
+            coordinate.text = "Your location \(location.coordinate.latitude.description) \(location.coordinate.longitude.description) - \(location.timestamp.description)"
+            speed.text = "Your moving at speed of \(location.speed.description) course \(location.courseAccuracy.description)"
+            altitude.text = "Your at altitude of \(location.altitude.description)"
+            
+            let object  =  CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            print(object.description)
+            
+            print(object.distance(from: object))
+            
             
         }
         
     }
+    
     
     //if we have been denied access give a user the option to change it
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -101,6 +113,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    //TODO:Monitor user aproximity to geographical position.
+    //TODO:SensorKit
     
 
 }
