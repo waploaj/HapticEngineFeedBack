@@ -9,7 +9,7 @@ import UIKit
 import CoreLocation
 import CoreMotion
 import Alamofire
-
+import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -18,11 +18,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let p = ButtonDesign()
     private let activityManger = CMMotionActivityManager()
     private let pedoMeter =  CMPedometer()
+    var lastCoordinate:CLLocationCoordinate2D?
+    var latitude:CLLocationDegrees?
+    var longitude:CLLocationDegrees?
     
     
     
+    
+    
+    //UI outlet
     @IBOutlet weak var coordinate: UILabel!
-    
+    @IBOutlet weak var mapKIT: MKMapView!
+    var counter = 0
+    @IBOutlet weak var SwitchMaps: UILabel!
     @IBOutlet weak var altitude: UILabel!
     @IBOutlet weak var speed: UILabel!
     
@@ -31,9 +39,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //adjust the widht to fit the size
         coordinate.adjustsFontSizeToFitWidth = true
+       
         
+        //UILabel call a function to perform an action when tap
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.labelAction(_:)))
+            coordinate.addGestureRecognizer(tap)
+            coordinate.isUserInteractionEnabled = true
         
+        let taps = UITapGestureRecognizer(target: self, action: #selector(self.labelSwitchMaps(_:)))
+        SwitchMaps.addGestureRecognizer(taps)
+        SwitchMaps.isUserInteractionEnabled = true
+            
         
         let parameter = ["appVersion": "1.3.1",
                          "countryCode": "TZ",
@@ -68,23 +86,63 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    
+    
     //Print location coordinate to the console
     func locationManager(_ _manager:CLLocationManager, didUpdateLocations Location:[CLLocation]){
         if let location = Location.first{
-            coordinate.text = "Your location \(location.coordinate.latitude.description) \(location.coordinate.longitude.description) - \(location.timestamp.description)"
+            coordinate.text = "Your location \(location.coordinate.latitude.description) \(location.coordinate.longitude.description) - \(location.timestamp.description) "
             speed.text = "Your moving at speed of \(location.speed.description) course \(location.courseAccuracy.description)"
-            altitude.text = "Your at altitude of \(location.altitude.description)"
-            
-            let object  =  CLLocation(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
-            print(object.description)
-            
-            print(object.distance(from: object))
-            
-            
+            altitude.text = "Your at altitude of \(location.altitude.description )"
+
+            latitude = location.coordinate.latitude
+            longitude = location.coordinate.longitude
         }
         
     }
+    @objc func labelSwitchMaps(_ sender:UIGestureRecognizer){
+        let impact = UIImpactFeedbackGenerator()
+        impact.impactOccurred()
+        if counter == 1{
+            mapKIT.mapType = MKMapType.standard
+            counter = 0
+        }else if counter == 0 {
+            mapKIT.mapType = MKMapType.satellite
+            counter = 1
+        }
+       
+    }
     
+    @objc func labelAction(_ sender: UIGestureRecognizer) {
+        //Haptic Engine
+        let impact = UIImpactFeedbackGenerator()
+        impact.impactOccurred()
+        
+        let regionDistance:CLLocationDistance = 1000
+        let coordinates = CLLocationCoordinate2DMake((latitude)!, (longitude)!)
+        let regionSpant = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+//        let option = [
+//            MKLaunchOptionsMapCenterKey:NSValue(mkCoordinate: regionSpant.center),
+//            MKLaunchOptionsMapSpanKey:NSValue(mkCoordinateSpan: regionSpant.span)
+//        ]
+        let placeMark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+ //       let mapItem = MKMapItem(placemark: placeMark)
+        
+//        mapItem.name = "You are Here"
+//        mapItem.openInMaps(launchOptions: option)
+        mapKIT.addAnnotation(placeMark)
+        mapKIT.isZoomEnabled = true
+        
+        mapKIT.setRegion(regionSpant, animated: true)
+        mapKIT.layer.name = "You are here"
+        if counter == 0{
+            mapKIT.mapType = MKMapType.satellite
+            counter = 1
+        }
+        
+        
+        
+    }
     
     //if we have been denied access give a user the option to change it
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {

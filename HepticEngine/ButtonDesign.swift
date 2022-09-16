@@ -22,18 +22,20 @@ class ButtonDesign:UIButton{
         
         
         button.frame = CGRect(x: buttonX, y: buttonY, width: buttonWidth, height: buttonHeight)
+        button.isHidden = true
         
         return button
         
     }
     
     //Notification Using Haptic Engine when clicked.
-    @objc func buttonClicked(sender:UIButton){
+    @objc func buttonClicked(){
 //        let alert = UIAlertController(title: "clicked", message: "you have clicked the button", preferredStyle: .alert)
 //        self.present(alert, animated: true, completion:nil)
         
         let impact = UIImpactFeedbackGenerator()
         impact.impactOccurred()
+        
         
         
     }

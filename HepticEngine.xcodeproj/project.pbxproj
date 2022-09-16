@@ -176,7 +176,6 @@
 				ECCC598AA17D36991D268796 /* Pods-HepticEngineTests.debug.xcconfig */,
 				314D77E31E505EAC06AD99F4 /* Pods-HepticEngineTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
