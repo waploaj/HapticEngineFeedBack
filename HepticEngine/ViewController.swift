@@ -21,6 +21,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var lastCoordinate:CLLocationCoordinate2D?
     var latitude:CLLocationDegrees?
     var longitude:CLLocationDegrees?
+    var muda:Date?
+    var speeds:Double?
     
     
     
@@ -41,7 +43,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Do any additional setup after loading the view.
         //adjust the widht to fit the size
         coordinate.adjustsFontSizeToFitWidth = true
-       
+        
         
         //UILabel call a function to perform an action when tap
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.labelAction(_:)))
@@ -94,9 +96,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             coordinate.text = "Your location \(location.coordinate.latitude.description) \(location.coordinate.longitude.description) - \(location.timestamp.description) "
             speed.text = "Your moving at speed of \(location.speed.description) course \(location.courseAccuracy.description)"
             altitude.text = "Your at altitude of \(location.altitude.description )"
+            muda = location.timestamp
 
             latitude = location.coordinate.latitude
             longitude = location.coordinate.longitude
+            muda = location.timestamp
+            speeds = location.speed
+            
         }
         
     }
@@ -130,7 +136,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
 //        mapItem.name = "You are Here"
 //        mapItem.openInMaps(launchOptions: option)
-        mapKIT.addAnnotation(placeMark)
+        
         mapKIT.isZoomEnabled = true
         
         mapKIT.setRegion(regionSpant, animated: true)
@@ -138,6 +144,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if counter == 0{
             mapKIT.mapType = MKMapType.satellite
             counter = 1
+        }
+        if speeds! <= 0.9{
+            mapKIT.addAnnotation(placeMark)
+            mapKIT.userLocation.title = "You are here"
+        }else{
+            mapKIT.showsUserLocation = true
+            mapKIT.userTrackingMode = .follow
         }
         
         
